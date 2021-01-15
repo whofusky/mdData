@@ -86,7 +86,7 @@
 > ```
 > 返回结果类似如下图则说明是连通的:
 >
-> ![nc返回1](./p/nc_nosrc.png "nc成功返回信息")
+> ![nc返回1](https://img.imgdb.cn/item/60013aeb3ffa7d37b3378060.png "nc成功返回信息")
 
 
 -   在某些环境中有防火墙则限制，需要有从固定ip或固定ip且固定端口连通目标ip与端口
@@ -100,7 +100,7 @@
 > ```
 > 返回结果类似如下图则说明是连通的:
 >
-> ![nc返回2](./p/nc_success.png "nc成功返回信息")
+> ![nc返回2](https://img.imgdb.cn/item/6001390f3ffa7d37b3364cf9.png "nc成功返回信息")
 >
 
 
@@ -122,7 +122,7 @@
 
 首先在终端输入命令`which opScdCfg.sh`查看scada主机器是否有opScdCfg.sh工具
 
-![which_opScdCfg_sh](./p/which_opScdCfg.png "which opScdCfg.sh 返回信息")
+![which_opScdCfg_sh](https://img.imgdb.cn/item/60013a8f3ffa7d37b3374e5d.png "which opScdCfg.sh 返回信息")
 
 -   如图所示则表示在当前环境中有opScdCfg.sh工具，可以直接在终端中（无论什么路径
     下都可以）使用如下命令查询相应信息。
@@ -135,7 +135,7 @@
 > 
 > opScdCfg.sh prt scdCfg.xml 输出信息如下：
 >
-> ![opScdCfg输出信息1](./p/opScd_prt_dsc.png "opScdCfg.sh prt scdCfg.xml输出信息")
+> ![opScdCfg输出信息1](https://img.imgdb.cn/item/60013a763ffa7d37b33740c3.png "opScdCfg.sh prt scdCfg.xml输出信息")
 >
 > 其中channels中包括的信息是通道相关信息是最常用到的。 
 
@@ -150,7 +150,7 @@
 > 在打开的文件中先查找channels节点：chnNum为通道号；然后查找对应channels节点下
 > stationCfg节点为通道下ip配置
 > 
-> ![scada_chn_ip_info_cfg](./p/scada_chn_ip_info_cfg.png "scada_chn_ip_info_cfg信息")
+> ![scada_chn_ip_info_cfg](https://img.imgdb.cn/item/60013a973ffa7d37b33752b1.png "scada_chn_ip_info_cfg信息")
 > 
 > 如果当前查看通道配置下的ip不是要查找的ip则查找下一个channels节点直到查到为止。
 
@@ -162,7 +162,7 @@
 
 首先在终端输入命令`which ss_scada`查看scada主机器是否有ss_scada工具
 
-![which_ss_scada](./p/which_ss_scada.png "which ss_scada 返回信息")
+![which_ss_scada](https://img.imgdb.cn/item/60013a873ffa7d37b3374879.png "which ss_scada 返回信息")
 
 如图所示则表示在当前环境中有ss_scada工具，可以直接在终端中（无论什么路径下都可以）
 使用`ss_scada`按回车键即可。
@@ -175,7 +175,7 @@
 
 ss_scada输出信息包括，scada的`进程ID`,各通道网络连接情况，具体信息如下图所示：
 
-![ss_scada_out](./p/ss_scada_dsc.png "ss_scada输出信息")
+![ss_scada_out](https://img.imgdb.cn/item/60013a693ffa7d37b337394f.png "ss_scada输出信息")
 
 如果输出信息中没有对应ip信息则说明对应ip通道没有网络连接。
 
@@ -189,7 +189,7 @@ ss_scada输出信息包括，scada的`进程ID`,各通道网络连接情况，�
 
 首先在终端输入命令`which msg_scada`查看scada主机器是否有msg_scada工具
 
-![which_msg_scada](./p/which_msg_scada.png "which msg_scada 返回信息")
+![which_msg_scada](https://img.imgdb.cn/item/60013aa53ffa7d37b3375a59.png "which msg_scada 返回信息")
 
 如图所示则表示在当前环境中有msg_scada工具，可以直接在终端中（无论什么路径下都可以）
 使用`msg_scada 通道号`按回车键即可,其中的通道号可以通过[opScdCfg工具](#opScdCfg查询ip相关配置信息)查找对应
@@ -206,7 +206,7 @@ ip及ip对应的通道号来确定。
 msg_scada的输出信息有时需要等待1分钟左右，当遇到此信息时知道是正常情况即可，
 具体信息如下图所示：
 
-![msg_scada_out](./p/msg_scada_dsc.png "msg_scada输出信息")
+![msg_scada_out](https://img.imgdb.cn/item/60013ab23ffa7d37b33760ab.png "msg_scada输出信息")
 
 上图的示例是输入`msg_scada 3`后的输出。
 
@@ -221,7 +221,7 @@ msg_scada的输出信息有时需要等待1分钟左右，当遇到此信息时�
 
 首先在终端输入命令`which err_scada`查看scada主机器是否有err_scada工具
 
-![which_err_scada](./p/which_err_scada.png "which err_scada 返回信息")
+![which_err_scada](https://img.imgdb.cn/item/60013ad43ffa7d37b337718c.png "which err_scada 返回信息")
 
 如图所示则表示在当前环境中有err_scada工具，可以直接在终端中（无论什么路径下都可以）
 使用
@@ -244,7 +244,7 @@ msg_scada的输出信息有时需要等待1分钟左右，当遇到此信息时�
 
 err_scada的无输入信息则表示无信息信息（如果有错误信息大多一1分钟内就会有输出）
 
-![err_scada_out](./p/err_scada_chnl_dsc.png "err_scada输出信息")
+![err_scada_out](https://img.imgdb.cn/item/60013abe3ffa7d37b337669e.png "err_scada输出信息")
 
 上图的示例是输入`err_scada 2`后的输出。
 
@@ -260,7 +260,7 @@ err_scada的无输入信息则表示无信息信息（如果有错误信息大�
 
 首先在终端输入命令`which val_scada`查看scada主机器是否有val_scada工具
 
-![which_val_scada](./p/which_val_scada.png "which val_scada 返回信息")
+![which_val_scada](https://img.imgdb.cn/item/60013ae63ffa7d37b3377e04.png "which val_scada 返回信息")
 
 如图所示则表示在当前环境中有val_scada工具，可以直接在终端中（无论什么路径下都可以）
 使用`val_scada 通道号`按回车键查看某个通道的收或发值信息,其中的通道号可以通过
@@ -269,7 +269,7 @@ err_scada的无输入信息则表示无信息信息（如果有错误信息大�
 val_scada的输出信息有时需要等待1分钟左右，当遇到此信息时知道是正常情况即可，
 具体信息如下图所示：
 
-![val_scada_out](./p/val_scada_dsc.png "val_scada输出信息")
+![val_scada_out](https://img.imgdb.cn/item/60013adb3ffa7d37b33777c4.png "val_scada输出信息")
 
 上图的示例是输入`val_scada 3`后的输出。
 
