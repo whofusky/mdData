@@ -504,7 +504,8 @@ lamplv逻辑卷大小是1.5GB，而scvg卷组中还有1.5GB的空间空间，那
 >        lvresize -L +1G /dev/scvg/lamplv
 >        lvdisplay
 
-df -h /disklvm/ 查看逻辑卷大小未变，需要使用resize2fs命令调整分区大小，不过不需要卸载分区,直接能调整分区大小.
+df -h /disklvm/ 查看逻辑卷大小未变，需要使用resize2fs命令(针对的是ext2/ext3/ext4文件系统)调整分区大小，不过不需要卸载分区,直接能调整分区大小.
+如果系统格式是xfs则需要用 xfs_growfs命令才能在df 中看到。
 
 ```
     resize2fs [选项] [设备文件名] [调整的大小]
